@@ -85,6 +85,56 @@ h6 {
   font-weight: 400;
 }
 
-body {
-  background-color: aqua;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .board {
+  width: 98%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  border: 1px solid black;
+}
+
+.wrapper .board .row {
+  width: 100%;
+  height: 50px;
+}
+
+.wrapper .board .row .column {
+  width: calc(100% / 10);
+  height: 100%;
+  float: left;
+  font-style: 20px;
+  text-align: center;
+  padding: 15px;
+}
+
+.wrapper .board .row .black {
+  background-color: black;
+}
+
+.wrapper .board .row .top {
+  border-top: 1px solid black;
+}
+
+.wrapper .board .row .bottom {
+  border-bottom: 1px solid black;
+}
+
+.wrapper .board .row .left {
+  border-left: 1px solid black;
+}
+
+.wrapper .board .row .right {
+  border-right: 1px solid black;
+}
+
+.wrapper .board .row .rotate {
+  transform: rotate(180deg);
 }
